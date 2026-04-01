@@ -14,8 +14,13 @@ func main() {
 	buzzerOut := buzzer.New(buzzerPin)
 
 	for _ = range 5 {
-		// tone(frequency, duration_in_seconds)
-		err := buzzerOut.Tone(buzzer.Gb6, .5)
+		err := buzzerOut.On()
+		if err != nil {
+			panic(err)
+		}
+		time.Sleep(500 * time.Millisecond)
+
+		err = buzzerOut.Off()
 		if err != nil {
 			panic(err)
 		}

@@ -1,6 +1,6 @@
-# Arduino Uno SMD - Plays buzzer 5 times
+# Arduino Uno SMD - Plays an active buzzer 5 times
 
-Plays buzzer 5 times with an arduino uno smd and Golang.
+Plays an active buzzer 5 times with an arduino uno smd and Golang.
 
 * VS Code
 * Golang 1.25.8
